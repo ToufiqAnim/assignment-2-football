@@ -85,7 +85,37 @@ Player Section
 /***********
 News Section 
 ***************/
-
+/* .news {
+  width: 1050px;
+  margin: auto;
+}
+.news h1 {
+  font-size: 30px;
+  width: 150px;
+}
+.news h1:hover {
+  font-size: 40px;
+  border-bottom: 2px solid gray;
+}
+.football-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-thumbnail img {
+  width: 400px;
+  height: 300px;
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.news-details p {
+  font-size: 20px;
+  margin-left: 30px;
+}
+p .bold {
+  font-size: 50px;
+  font-weight: 700;
+} */
 /*************
 Footer Section 
 **************/
@@ -147,6 +177,10 @@ footer p {
     grid-template-columns: repeat(1, 330px);
     justify-content: center;
   }
+  /* .football-news {
+    display: flex;
+    flex-direction: column;
+  } */
   footer {
     width: 90%;
   }

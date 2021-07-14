@@ -61,7 +61,7 @@ Player Section
   max-width: 1050px;
   margin: auto;
   margin-top: 70px;
-  margin-bottom: 165px;
+  margin-bottom: 80px;
 }
 .player-thumbnail {
   padding: 15px;
@@ -124,6 +124,20 @@ News Section
 .photo-frame:hover .photo {
   transform: scale(1.2);
   transition: transform 3s ease-in-out;
+}
+
+/* Score Section  */
+
+.score {
+  display: flex;
+  width: 1050;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.score h1 {
+  text-align: center;
 }
 /*************
 Footer Section 
@@ -194,16 +208,22 @@ footer p {
     width: 100%;
     border-radius: 0;
   }
-
-  /* .football-news {
+  /* score  */
+  .score {
     display: flex;
     flex-direction: column;
-  } */
+    max-width: 400px;
+  }
+
+  /* Footer  */
   footer {
     width: 90%;
+    margin-top: 45px;
+    margin-bottom: 160px;
   }
   .logo img {
     width: 100%;
+    margin: auto;
   }
   .fab:hover {
     color: gray;

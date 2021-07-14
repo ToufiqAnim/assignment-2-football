@@ -82,51 +82,50 @@ Player Section
   line-height: 26px;
   font-weight: 500;
 }
-/***********
+/************
 News Section 
-***************/
+*************/
 
-.photo-album {
+.news-album {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
-  /* width: 200px; */
-  /* height: 200px; */
 }
-.photo-frame {
+.news-frame {
   width: 400px;
   margin: 20px;
   position: relative;
   overflow: hidden;
 }
-.photo img {
+.news img {
   width: 400px;
   height: 300px;
   border-radius: 10px;
 }
-.photo-detail {
+.news-detail {
   display: none;
   position: absolute;
   top: 0;
   width: 400px;
   margin: 5px;
 }
-.photo-detail h1 {
+.news-detail h1 {
   text-align: center;
 }
-.photo-frame:hover .photo-detail {
+.news-frame:hover .news-detail {
   display: block;
   background-color: rgba(240, 255, 255, 0.301);
   font-size: 1em;
 }
-.photo-frame:hover .photo {
+.news-frame:hover .news {
   transform: scale(1.2);
   transition: transform 3s ease-in-out;
 }
 
-/* Score Section  */
+/***********
+Score Section 
+**************/
 
 .score {
   display: flex;
@@ -200,11 +199,11 @@ footer p {
     grid-template-columns: repeat(1, 330px);
     justify-content: center;
   }
-  .photo-album {
+  .news-album {
     display: flex;
     overflow: auto;
   }
-  .photo img {
+  .news img {
     width: 100%;
     border-radius: 0;
   }

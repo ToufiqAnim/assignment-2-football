@@ -85,37 +85,46 @@ Player Section
 /***********
 News Section 
 ***************/
-/* .news {
-  width: 1050px;
-  margin: auto;
-}
-.news h1 {
-  font-size: 30px;
-  width: 150px;
-}
-.news h1:hover {
-  font-size: 40px;
-  border-bottom: 2px solid gray;
-}
-.football-news {
+
+.photo-album {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  /* width: 200px; */
+  /* height: 200px; */
 }
-.news-thumbnail img {
+.photo-frame {
+  width: 400px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.photo img {
   width: 400px;
   height: 300px;
-  padding: 15px;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
 }
-.news-details p {
-  font-size: 20px;
-  margin-left: 30px;
+.photo-detail {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 400px;
+  margin: 5px;
 }
-p .bold {
-  font-size: 50px;
-  font-weight: 700;
-} */
+.photo-detail h1 {
+  text-align: center;
+}
+.photo-frame:hover .photo-detail {
+  display: block;
+  background-color: rgba(240, 255, 255, 0.301);
+  font-size: 1em;
+}
+.photo-frame:hover .photo {
+  transform: scale(1.2);
+  transition: transform 3s ease-in-out;
+}
 /*************
 Footer Section 
 **************/
@@ -177,6 +186,15 @@ footer p {
     grid-template-columns: repeat(1, 330px);
     justify-content: center;
   }
+  .photo-album {
+    display: flex;
+    overflow: auto;
+  }
+  .photo img {
+    width: 100%;
+    border-radius: 0;
+  }
+
   /* .football-news {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3f1ff;
+  font-family: "Poppins", sans-serif;
+}
+
+/******************* 
+Header Section Styles 
+**********************/
+header {
+  background-color: #151b29;
+}
+.copa-america {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.copa-left {
+  margin-right: 30px;
+}
+.copa-left h1 {
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+  line-height: 80px;
+  margin-bottom: 27px;
+}
+.copa-left button {
+  background: none;
+  color: #ffa260;
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+  transition: all 0.25s;
+}
+.copa-left button:hover {
+  border-color: #f1ff5c;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+.copa-right img {
+  width: 556px;
+  height: 450px;
+  margin-bottom: 10px;
+}
+/****************
+Player Section 
+******************/
+.football-players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+  max-width: 1050px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 165px;
+}
+.player-thumbnail {
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-thumbnail img {
+  max-width: 300px;
+  max-height: 256px;
+}
+.player-thumbnail h2 {
+  font-weight: bold;
+  font-size: 28px;
+  margin: 16px 0;
+}
+.player-thumbnail p {
+  color: gray;
+  padding-bottom: 20px;
+  line-height: 26px;
+  font-weight: 500;
+}
+/*************
+Footer Section 
+**************/
+footer {
+  width: 485px;
+  height: 215;
+  margin: auto;
+  text-align: center;
+  margin-top: 155px;
+  margin-bottom: 65px;
+}
+.logo img {
+  max-width: 485px;
+  height: 110px;
+}
+.fab {
+  font-size: 35px;
+  padding: 0 14px;
+  color: rgba(128, 128, 128, 0.556);
+}
+.fab:hover {
+  color: gray;
+}
+footer p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Media Queries section  */
+/* Mobile Responsive  */
+@media only screen and (max-width: 688px) {
+  .copa-america {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 0;
+  }
+  .copa-left h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 27px;
+    margin-left: 30px;
+  }
+  .copa-left button {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .copa-right img {
+    width: 100%;
+    height: auto;
+  }
+  .player-thumbnail {
+    display: block;
+    margin: auto;
+  }
+  .football-players {
+    display: grid;
+    grid-template-columns: repeat(1, 330px);
+    justify-content: center;
+  }
+  footer {
+    width: 90%;
+  }
+  .logo img {
+    width: 100%;
+  }
+}

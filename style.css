@@ -82,6 +82,10 @@ Player Section
   line-height: 26px;
   font-weight: 500;
 }
+/***********
+News Section 
+***************/
+
 /*************
 Footer Section 
 **************/
@@ -148,5 +152,8 @@ footer p {
   }
   .logo img {
     width: 100%;
+  }
+  .fab:hover {
+    color: gray;
   }
 }
